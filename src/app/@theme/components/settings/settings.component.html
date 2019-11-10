@@ -1,0 +1,18 @@
+<div class="settings-container">
+  <!-- <span class="subheader">Layouts</span> -->
+  <!-- <div class="settings-row"><button class="select-button size-medium status-primary shape-rectangle ng-star-inserted transitions appearance-ghost" nbbutton="" _nghost-lpp-c15="" aria-label="One Column" aria-disabled="false" tabindex="0"><i class="nb-layout-default setting-icon"></i></button><button class="select-button size-medium status-primary shape-rectangle ng-star-inserted transitions appearance-ghost" nbbutton="" _nghost-lpp-c15="" aria-label="Two Column" aria-disabled="false" tabindex="0"><i class="nb-layout-two-column setting-icon"></i></button><button class="select-button size-medium status-primary shape-rectangle ng-star-inserted transitions appearance-outline" nbbutton="" _nghost-lpp-c15="" aria-label="Center Column" aria-disabled="false" tabindex="0"><i class="nb-layout-centre setting-icon"></i></button></div> -->
+
+  <span class="subheader" translate>caption.theme</span>
+  <div class="settings-theme settings-row">
+    <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="warning">
+      <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+    </nb-select>
+  </div>
+
+  <span class="subheader" translate>caption.lang</span>
+  <div class="settings-language settings-row">
+    <nb-select [selected]="currentLanguage" (selectedChange)="switchLanguage($event)" status="success">
+      <nb-option *ngFor="let lang of languages" [value]="lang.code"> {{ lang.des }}</nb-option>
+    </nb-select>
+  </div>
+</div>

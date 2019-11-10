@@ -1,0 +1,58 @@
+{
+  "message": {},
+  "form": {
+    "name": "Tên",
+    "email": "Email",
+    "address": "Địa chỉ",
+    "phone": "Số điện thoại",
+    "number": "Số",
+    "tyoe": "Kiểu",
+    "gender": "Giới tính",
+    "bod": "Ngày sinh",
+    "password": "Mật khẩu",
+    "register":"Đăng ký"
+  },
+  "caption": {
+    "theme": "Mẫu UI",
+    "lang": "Ngôn ngữ"
+  },
+  "menu": {
+    "dashboard": "Thống kê",
+    "payment": {
+      "payment": "Thanh toán",
+      "paymenta": "Nội bộ",
+      "paymentb": "Liên ngân hàng"
+    },
+    "pobo": "Chi hộ",
+    "cobo": {
+      "cobo": "Thu hộ",
+      "coboa": "Thu hộ ABC",
+      "cobob": "Thu hộ ZZZZ",
+      "coboadsl": "Thu hộ ADSL"
+    },
+    "report": "Báo cáo"
+  },
+  "user": {
+    "login": {
+      "greeting": "Xin chào! Đăng nhập với email của bạn",
+      "emailaddress": "Địa chỉ email",
+      "login": "Đăng nhập",
+      "rememberme": "Ghi nhớ",
+      "emailrequired": "Email không được trống!",
+      "passwordrequired": "Mật khẩu không được trống!",
+      "invalidemail": "Email không đúng định dạng!",
+      "forgotpassword": "Quên mật khẩu",
+      "fail": "Đăng nhập không thành công!",
+      "wrongaccount": "Sai tài khoản, kiểm tra và thử lại sau",
+      "notactive": "Tài khoản chưa được kích hoạt",
+      "locked": "Tài khoản đã bị khóa, liên hệ Admin của bạn!"
+    },
+    "reset": {
+      "fillemail": "Đưa vào địa chỉ email:",
+      "backlogin": "Quay lại trang Đăng nhập",
+      "description": "Cung cấp email của bạn, chúng tôi sẽ gửi mật khẩu/link về email",
+      "request": "Yêu cầu mật khẩu"
+    },
+    "logout": "Đang đăng xuất ..., vui lòng chờ trong giây lát!"
+  }
+}

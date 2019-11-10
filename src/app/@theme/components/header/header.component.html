@@ -1,0 +1,23 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()">BankPlus</a>
+  </div>  
+</div>
+
+<div class="header-container">
+  <nb-actions size="small">
+    <nb-action class="control-item">
+      <nb-search type="rotate-layout"></nb-search>
+    </nb-action>
+    <nb-action class="control-item" icon="email-outline"  badgeText="5" badgeStatus="info" badgePosition="top right"></nb-action>
+    <nb-action class="control-item" icon="bell-outline" badgeText="99+" badgeStatus="danger" badgePosition="top right"></nb-action>
+    <nb-action class="user-action" *nbIsGranted="['view', 'user']">
+      <nb-user [nbContextMenu]="userMenu" [onlyPicture]="userPictureOnly" [name]="user?.fullName" [picture]="user?.avatar">
+      </nb-user>
+    </nb-action>
+    <nb-action class="toggle-layout" (click)="toggleSettings()" icon="settings-outline"></nb-action>
+  </nb-actions>
+</div>

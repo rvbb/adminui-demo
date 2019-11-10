@@ -1,0 +1,58 @@
+{
+    "message": {},
+    "form": {
+        "name": "名稱",
+        "email": "電子郵件",
+        "address": "地址",
+        "phone": "電話",
+        "number": "數",
+        "tyoe": "類型",
+        "gender": "性別",
+        "bod": "日期的誕生",
+        "password":"密码",
+        "register":"Register"
+    },
+    "caption": {
+        "lang": "郎",
+        "theme": "主题"
+    },
+    "menu": {
+        "dashboard": "仪表板",
+        "payment": {
+            "payment": "付款",
+            "paymenta": "付款 A",
+            "paymentb": "付款 B"
+        },
+        "pobo": "代付款",
+        "cobo": {
+            "cobo": "代收",
+            "coboa": "代收 A",
+            "cobob": "代收 B",
+            "coboadsl": "代收 ADSL"
+        },
+        "report": "报告"
+    },
+    "user": {
+        "login": {
+            "greeting": "你好！ 使用您的帐户登录",
+            "emailaddress": "电子邮件地址",
+            "login": "登录",
+            "rememberme": "记住账号",
+            "emailrequired":"电子邮件为必填项",
+            "passwordrequired":"密码是必需的",
+            "invalidemail":"电子邮件应该是真实的！",
+            "forgotpassword":"忘记密码",         
+            "fail":"登录失败！",
+            "wrongaccount":"",
+            "notactive":"帐户错误，请检查并重试",
+            "locked":"您的帐户已被锁定。 与您的管理员联系."
+        },
+        "reset":{
+            "fillemail":"输入您的电子邮件地址：",
+            "backlogin":"回到登入",
+            "description":"输入您的电子邮件地址，我们将发送一个链接以重置您的密码",
+            "request":"要求密码"
+        },
+        "logout":"正在注销...，请稍候！"
+    }
+}

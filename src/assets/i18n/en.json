@@ -1,0 +1,58 @@
+{
+    "message": {},
+    "form": {
+        "name": "Name",
+        "email": "Email",
+        "address": "Address",
+        "phone": "Phone",
+        "number": "Number",
+        "type": "Type",
+        "gender": "Gender",
+        "bod": "BOD",
+        "password": "Passowrd",
+        "register":"Register"
+    },
+    "caption": {
+        "theme": "Theme",
+        "lang": "Language"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "payment": {
+            "payment": "Payment",
+            "paymenta": "Internal",
+            "paymentb": "External"
+        },
+        "pobo": "POBO",
+        "cobo": {
+            "cobo": "COBO",
+            "coboa": "Cobo ANZ",
+            "cobob": "COBO VPBank",
+            "coboadsl": "COBO ADSL"
+        },
+        "report": "Report"
+    },
+    "user": {
+        "login": {
+            "greeting": "Hello! Log in with your email",
+            "emailaddress": "Email address",
+            "login": "Log in",
+            "rememberme": "Remember me",
+            "emailrequired": "Email is required",
+            "passwordrequired": "Password is required",
+            "invalidemail": " Email should be the real one!",
+            "forgotpassword": "Forgot Password",
+            "fail": "Login fail!",
+            "wrongaccount": "Wrong account, please check and try again",
+            "notactive": "Your account is not actived",
+            "locked": "Your account was locked. Check with your administrator."
+        },
+        "reset": {
+            "fillemail": "Enter your email address:",
+            "backlogin": "Back to Log In",
+            "description": "Enter your email address and we’ll send a link to reset your password",
+            "request": "Request Password"
+        },
+        "logout": "Logging out ..., please wait!"
+    }
+}

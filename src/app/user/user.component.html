@@ -1,0 +1,30 @@
+<nb-layout withScroll>
+    <nb-layout-column>
+        <nb-card class="login-container">
+            <nb-card-header center>
+                <nav class="navigation">
+                    <ul>
+                    <!-- only show when history-page is not required login 
+                        <a (click)="back()"><nb-icon icon="arrow-back"></nb-icon></a> -->
+                    <li (click)="chooseLanguage('en')" [class]="activedLang == 'en'?'active':''"><img src="assets/images/flag/en.svg" /></li>
+                    <li (click)="chooseLanguage('vi')" [class]="activedLang == 'vi'?'active':''"><img src="assets/images/flag/vi.svg" /></li>
+                    <li (click)="chooseLanguage('la')" [class]="activedLang == 'la'?'active':''"><img src="assets/images/flag/la.svg" /></li>
+                    <li (click)="chooseLanguage('ch')" [class]="activedLang == 'ch'?'active':''"><img src="assets/images/flag/ch.svg" /></li>
+                    </ul>
+                </nav>
+            </nb-card-header>
+            <nb-card-body>
+                <nb-auth-block>
+                    <router-outlet></router-outlet>
+                </nb-auth-block>
+            </nb-card-body>
+            <nb-card-footer>
+                <span class="copyright">©Viettel Digital Corps - 2019</span>
+                <div class="feedback">      
+                    <a href="#"><span>19001001</span><i class="fas fa-phone"></i></a>
+                    <a href="#"><span>Feedback</span><i class="far fa-envelope"></i></a>
+                  </div>
+            </nb-card-footer>
+        </nb-card>
+    </nb-layout-column>
+</nb-layout>

@@ -1,0 +1,58 @@
+{
+    "message": {},
+    "form": {
+        "name": "ຊື່",
+        "email": "ອີເມວ",
+        "address": "ທີ່ຢູ່",
+        "phone": "ໂທລະສັບ",
+        "number": "ຈໍານວນ",
+        "type": "ປະເພດ",
+        "gender": "ເພດ",
+        "bod": "ວັນເດືອນປີເກີດ",
+        "password":"Passowrd",
+        "register":"Register"
+    },
+    "caption": {
+        "lang": "ພາສາ",
+        "theme": "ຫົວຂໍ້"
+    },
+    "menu": {
+        "dashboard": "ສະຖິຕິ",
+        "payment": {
+            "payment": "ການຈ່າຍເງິນ",
+            "paymenta": "ການຈ່າຍເງິນ A",
+            "paymentb": "ການຈ່າຍເງິນ B"
+        },
+        "pobo": "ການຈ່າຍເງິນໃນນາມ",
+        "cobo": {
+            "cobo": "ເກັບໃນນາມ",
+            "coboa": "ເກັບໃນນາມ A",
+            "cobob": "ເກັບໃນນາມ B",
+            "coboadsl": "ເກັບໃນນາມ ADSL"
+        },
+        "report": "ລາຍງານ"
+    },
+    "user": {
+        "login": {
+            "greeting": "Hello! Log in with your email",
+            "emailaddress": "Email address",
+            "login": "Log in",
+            "rememberme": "Remember me",
+            "emailrequired":"Email is required!",
+            "passwordrequired":"Password is required!",
+            "invalidemail":" Email should be the real one!",
+            "forgotpassword":"Forgot Password",
+            "fail":"Login fail!",
+            "wrongaccount":"Wrong account, please check and try again",
+            "notactive":"Your account is not actived",
+            "locked":"Your account was locked. Check with your administrator."
+        },
+        "reset":{
+            "fillemail":"Enter your email address:",
+            "backlogin":"Back to Log In",
+            "description":"Enter your email address and we’ll send a link to reset your password",
+            "request":"Request Password"
+        },
+        "logout":"Logging out ..., please wait!"
+    }
+}

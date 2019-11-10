@@ -1,0 +1,290 @@
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 24px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  is: 400px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+);
+
+$container-max-widths: (
+  is: 380px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1500px
+);
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.02px, null);
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+:host {
+  $auth-layout-padding: 2.5rem;
+
+  nb-card {
+    margin: 0;
+    height: calc(100vh - 2 * #{$auth-layout-padding});
+  }
+  .navigation {
+    text-align: center;
+  }
+  .navigation .link {
+    display: inline-block;
+    text-decoration: none;
+
+    nb-icon {
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+  }
+  .navigation li img {
+    width: 30px;
+    height: 30px;
+  }
+  .navigation ul li img:hover {
+    border: 1px solid primary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .feedback {
+    float: right;
+    font-size: 1.5rem;    
+    a {
+      margin:0px 10px;
+      color: nb-theme(text-hint-color);
+      transition: color ease-out 0.1s;
+      &:hover {
+        color: nb-theme(text-hint-color);
+      }      
+
+      span{
+        font-size: 14px;    
+        color: nb-theme(text-hint-color);
+        padding-right: 4px;
+      }
+      i{
+        font-size:14px;
+      }
+    }
+  }
+  .navigation ul li{
+    list-style-type: none;    
+  }
+  .navigation ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation li{
+    margin: 0px 10px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border: 1px solid transparent;    
+  }
+  .navigation li:hover, .navigation li .active{
+    // border-color: gray;
+    //background-color:gray;//nb-theme(color-basic-800);
+    border-radius: 50%;
+  }
+
+  @include media-breakpoint-down(is) {
+    .socials {
+      font-size: 1.5rem;
+    }
+  }
+
+  .links nb-icon {
+    font-size: 2.5rem;
+  }
+  nb-card-body {
+    display: flex;
+    width: 100%;
+  }
+
+  nb-auth-block {
+    margin: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    nb-card {
+      border-radius: 0;
+      height: 100vh;
+    }
+  }
+
+  ::ng-deep {
+    nb-layout .layout .layout-container .content .columns nb-layout-column {
+      padding: $auth-layout-padding;
+
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@mixin nb-auth-block-theme() {
+  nb-auth-block {
+    .text-link {
+      color: nb-theme(text-hint-color);
+    }
+
+    .forgot-password {
+      color: nb-theme(text-disabled-color);
+    }
+
+    .socials a {
+      color: nb-theme(text-hint-color);
+    }
+  }
+}
+
+:host {
+  display: block;
+  width: 100%;
+  max-width: 35rem;
+
+  ::ng-deep {
+    nb-layout .scrollable-container {
+      width: 100vw;
+    }
+    form {
+      width: 100%;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .forgot-password {
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+    }
+
+    .alert {
+      text-align: center;
+    }
+
+    .title {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .sub-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .form-control-group {
+      margin-bottom: 2rem;
+    }
+
+    .form-control-group.accept-group {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+
+    .label-with-link {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 1.75rem;
+
+      .socials {
+        margin-top: 1.5rem;
+      }
+
+      .socials a {
+        margin: 0 1rem;
+        text-decoration: none;
+        vertical-align: middle;
+
+        &.with-icon {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .another-action {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .sign-in-or-up {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nb-alert {
+      .alert-title,
+      .alert-message {
+        margin: 0 0 0.5rem;
+      }
+      .alert-message-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
