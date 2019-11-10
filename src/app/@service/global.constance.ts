@@ -29,8 +29,8 @@ export const THEMES = [
         name: 'Dark',
     },
     {
-        value: 'vietteldigital',
-        name: 'Viettel',
+        value: 'blue',
+        name: 'Bluetheme',
     }
 ];
 
@@ -51,9 +51,7 @@ export const REMEMBERMELS = "bankplus-rememberaccount"; //need persionalize to e
 //technical is easy: concatenate USER ID to localStorage key.
 
 // 3rd APIs
-export const API_BACKEND_URL = "https://backend.vietteldigital.com";
-export const API_BI_URL = "https://bi.vietteldigital.vn"
-export const API_BCCS_URL = "https://bccs.vietteldigital.com.vn"
+export const API_BACKEND_URL = "https://backend.backend-demo.com";
 
 
 export const DEFAULT_PAGE = '/auth/login';

@@ -1,7 +1,7 @@
 {
   "name": "bankplus-new",
   "version": "1.0.0",
-  "license": "Viettel Digital Corps",
+  "license": "Copyright N.V Hoang.",
   "repository": {
     "type": "git",
     "url": "git+http://bitbucket.digital.vn/webapp/newweb/frontend/bankplus-new.git"

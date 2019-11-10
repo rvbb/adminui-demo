@@ -1,7 +1,7 @@
 /**
  * @license
  * 
- * Copyright Viettel Digital Corps. All Rights Reserved.
+ * Copyright N.V Hoang.
  * (Customized from ngx-admin - MIT).
  */
 

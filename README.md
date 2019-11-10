@@ -1,4 +1,4 @@
-* Copyright Viettel Digital Corps. All Rights Reserved - Not for commerce. Used inhouse of Viettel Digital.
+* Copyright N.V Hoang.
 
 This template may appied for all administration project.
 With free-style UI, should use template "frontend-general <http://os_hoangnv1@bitbucket.digital.vn/scm/webapp/frontend-general.git>"
@@ -16,10 +16,6 @@ Read detail [Dev Docs](https://github.com/akveo/nebular/blob/master/DEV_DOCS.md)
 - Authentication module with multiple providers
 - 40+ Angular Components
 - 60+ Usage Examples
-
-<a name="1.0.0"></a>
-## [1.0.0](https://bankplus.vietteldigital.com) (2019)
-
 
 ### Bug Fixes
 

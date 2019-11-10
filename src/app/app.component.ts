@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright Viettel Digital Corps. All Rights Reserved - Not for commerce. Used inhouse of Viettel Digital.
+ * Copyright N.V Hoang.
  */
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { AnalyticsService } from './@core/utils/analytics.service';

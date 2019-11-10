@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright Viettel Digital Corps. All Rights Reserved 
+ * Copyright N.V Hoang.
  */
 
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files

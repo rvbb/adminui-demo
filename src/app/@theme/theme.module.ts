@@ -39,7 +39,7 @@ import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 import { DARK_THEME } from './styles/theme.dark';
 import { SettingsComponent } from './components/settings/settings.component';
-import { VIETTEL_THEME } from './styles/theme.vietteldigital';
+// import { BLUE_THEME } from './styles/theme.blue';
 import { TranslateModule } from '@ngx-translate/core';
 
 const NB_MODULES = [
@@ -88,7 +88,7 @@ export class ThemeModule {
           {
             name: 'default',
           },
-          [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME, VIETTEL_THEME ],
+          [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME ],
         ).providers,
       ],
     };

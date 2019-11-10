@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright Viettel Digital Corps. All Rights Reserved - Not for commerce. Used inhouse of Viettel Digital.
+ * Copyright N.V Hoang.
  * Customize by Hoang N.V<hoangnv01@gmail.com>.
  */
 import { BrowserModule } from '@angular/platform-browser';
