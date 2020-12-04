@@ -8,7 +8,7 @@ import { USERLS, DEFAULT_PAGE } from '../@service/global.constance';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'bankplus-pages',
+  selector: 'lmsadmin-pages',
   styleUrls: ['pages.component.scss'],
   template: `
     <ngx-one-column-layout>

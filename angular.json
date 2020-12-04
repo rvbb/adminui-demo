@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bankplus": {
+    "lmsadmin": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -20,7 +20,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/bankplus.png",
+              "src/lms-admin.png",
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images",
@@ -39,7 +39,7 @@
               "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
               "node_modules/leaflet/dist/leaflet.css",
               "src/app/@theme/styles/styles.scss",
-              "src/app/bankplus.scss"
+              "src/app/lms-admin.scss"
             ],
             "scripts": [
               "node_modules/pace-js/pace.min.js",
@@ -76,19 +76,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bankplus:build",
+            "browserTarget": "lmsadmin:build",
             "port":20202
           },
           "configurations": {
             "production": {
-              "browserTarget": "bankplus:build:production"
+              "browserTarget": "lmsadmin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bankplus:build"
+            "browserTarget": "lmsadmin:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
               "node_modules/tinymce/plugins/table/plugin.min.js",
               "node_modules/echarts/dist/echarts.min.js",
               "node_modules/echarts/dist/extension/bmap.min.js",
-              "node_modules/chart.js/dist/Chart.min.js"
+              "node_modules/chart.js/dist/Chart.min.js"              
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
@@ -119,7 +119,7 @@
               "node_modules/nebular-icons/scss/nebular-icons.scss",
               "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
               "src/app/@theme/styles/styles.scss",
-              "src/app/bankplus.scss"
+              "src/app/lms-admin.scss"
             ],
             "assets": [
               "src/assets",
@@ -146,7 +146,7 @@
         }
       }
     },
-    "bankplus-e2e": {
+    "lmsadmin-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -155,7 +155,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "bankplus:serve"
+            "devServerTarget": "lmsadmin:serve"
           }
         },
         "lint": {
@@ -170,7 +170,7 @@
       }
     }
   },
-  "defaultProject": "bankplus",
+  "defaultProject": "lms-admin",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "ngx",

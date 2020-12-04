@@ -54,12 +54,12 @@ import { MockDataModule } from './mock/mock-data.module';
 
 const socialLinks = [
   {
-    url: 'https://www.facebook.com/vietteldigital/',
+    url: 'https://www.smartosc.com/fb',
     target: '_blank',
     icon: 'facebook',
   },
   {
-    url: 'https://twitter.com/vietteldigital',
+    url: 'https://twitter.com/smartosc',
     target: '_blank',
     icon: 'twitter',
   },

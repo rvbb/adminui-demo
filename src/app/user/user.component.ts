@@ -7,7 +7,7 @@ import { ThemeLocalStorageDto } from '../@service/global.interface';
 import Utils from '../@service/global.util';
 
 @Component({
-  selector: 'vds-user',
+  selector: 'user',
   templateUrl: 'user.component.html',
   styleUrls: ['user.component.scss']
 })

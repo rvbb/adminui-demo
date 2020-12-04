@@ -25,7 +25,3 @@
     "allowSyntheticDefaultImports": true
   }
 }
-// WARNING: use  "target": "es2015", make error type=module when deploy angular to a webserver
-// use target:"es5" will remove type atribute of index.html/<script xxx >
-// Both of "es5" and "es2015" make error on webserver not Nodejs. There is not good solution. Need manually to update index.html.
-

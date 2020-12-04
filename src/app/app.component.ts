@@ -15,7 +15,7 @@ import Utils from './@service/global.util';
 import { ThemeLocalStorageDto } from './@service/global.interface';
 
 @Component({
-  selector: 'bankplus-web',
+  selector: 'lms-admin',
   template: '<router-outlet></router-outlet>',
 })
 export class AppComponent implements OnInit {

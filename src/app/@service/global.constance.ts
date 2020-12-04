@@ -45,13 +45,13 @@ export const ROLE_SUPERVISOR="supervisor";
 export const ROLE_STAFF="staff";
 
 // localStorage
-export const USERLS = "bankplus-user";
-export const THEMELS = "bankplus-theme"; //need persionalize to each user (suppose one device used by multi users)
-export const REMEMBERMELS = "bankplus-rememberaccount"; //need persionalize to each user (suppose one device used by multi users)
+export const USERLS = "lmsadmin-user";
+export const THEMELS = "lmsadmin-theme"; //need persionalize to each user (suppose one device used by multi users)
+export const REMEMBERMELS = "lmsadmin-rememberaccount"; //need persionalize to each user (suppose one device used by multi users)
 //technical is easy: concatenate USER ID to localStorage key.
 
 // 3rd APIs
-export const API_BACKEND_URL = "https://backend.backend-demo.com";
+export const API_BACKEND_URL = "http://localhost:20202/bank";
 
 
 export const DEFAULT_PAGE = '/auth/login';

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright Viettel Digital Corps. All Rights Reserved 
+ * Copyright N.V Hoang. All Rights Reserved 
  */
 export const environment = {
   production: false,
