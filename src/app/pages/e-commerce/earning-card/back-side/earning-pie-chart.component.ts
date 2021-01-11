@@ -80,7 +80,7 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
       series: [
         {
           name: ' ',
-          clockWise: true,
+          // clockWise: true,
           hoverAnimation: false,
           type: 'pie',
           center: earningPie.center,
@@ -93,12 +93,12 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
                 normal: {
                   position: 'center',
                   formatter: '',
-                  textStyle: {
-                    fontSize: '22',
-                    fontFamily: variables.fontSecondary,
-                    fontWeight: '600',
-                    color: variables.fgHeading,
-                  },
+                  // textStyle: {
+                  //   fontSize: '22',
+                  //   fontFamily: variables.fontSecondary,
+                  //   fontWeight: '600',
+                  //   color: variables.fgHeading,
+                  // },
                 },
               },
               tooltip: {
@@ -130,12 +130,12 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
                 normal: {
                   position: 'center',
                   formatter: '',
-                  textStyle: {
-                    fontSize: '22',
-                    fontFamily: variables.fontSecondary,
-                    fontWeight: '600',
-                    color: variables.fgHeading,
-                  },
+                  // textStyle: {
+                  //   fontSize: '22',
+                  //   fontFamily: variables.fontSecondary,
+                  //   fontWeight: '600',
+                  //   color: variables.fgHeading,
+                  // },
                 },
               },
               tooltip: {
@@ -167,12 +167,12 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
                 normal: {
                   position: 'center',
                   formatter: '',
-                  textStyle: {
-                    fontSize: '22',
-                    fontFamily: variables.fontSecondary,
-                    fontWeight: '600',
-                    color: variables.fgHeading,
-                  },
+                  // textStyle: {
+                  //   fontSize: '22',
+                  //   fontFamily: variables.fontSecondary,
+                  //   fontWeight: '600',
+                  //   color: variables.fgHeading,
+                  // },
                 },
               },
               tooltip: {

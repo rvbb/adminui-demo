@@ -32,7 +32,7 @@ export class CountryOrdersChartComponent implements AfterViewInit, OnDestroy, On
   echartsInstance;
 
   constructor(private theme: NbThemeService,
-              private layoutService: LayoutService) {
+    private layoutService: LayoutService) {
     this.layoutService.onChangeLayoutSize()
       .pipe(
         takeWhile(() => this.alive),
@@ -42,19 +42,21 @@ export class CountryOrdersChartComponent implements AfterViewInit, OnDestroy, On
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.data && !changes.data.isFirstChange()) {
-      this.echartsInstance.setOption({
-        series: [
-          {
-            data: this.data.map(v => this.maxValue),
-          },
-          {
-            data: this.data,
-          },
-          {
-            data: this.data,
-          },
-        ],
-      });
+      if (this.echartsInstance) {
+        this.echartsInstance.setOption({
+          series: [
+            {
+              data: this.data.map(v => this.maxValue),
+            },
+            {
+              data: this.data,
+            },
+            {
+              data: this.data,
+            },
+          ],
+        });
+      }
     }
   }
 

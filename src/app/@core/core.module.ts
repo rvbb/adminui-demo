@@ -54,12 +54,12 @@ import { MockDataModule } from './mock/mock-data.module';
 
 const socialLinks = [
   {
-    url: 'https://www.smartosc.com/fb',
+    url: 'https://fb.com/rvbb',
     target: '_blank',
     icon: 'facebook',
   },
   {
-    url: 'https://twitter.com/smartosc',
+    url: 'https://twitter.com/rvbb',
     target: '_blank',
     icon: 'twitter',
   },
@@ -152,8 +152,8 @@ export class CoreModule {
     throwIfAlreadyLoaded(parentModule, 'CoreModule');
   }
 
-  static forRoot(): ModuleWithProviders {
-    return <ModuleWithProviders>{
+  static forRoot(): ModuleWithProviders<CoreModule> {
+    return <ModuleWithProviders<CoreModule>>{
       ngModule: CoreModule,
       providers: [
         ...NB_CORE_PROVIDERS,

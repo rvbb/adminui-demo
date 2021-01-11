@@ -36,7 +36,7 @@
         width: $sidebar-width;
       }
 
-      @include nb-for-theme(cosmic) {
+      @include nb-for-theme(golden) {
         background: nb-theme(background-basic-color-1);
       }
     }

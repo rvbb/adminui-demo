@@ -67,7 +67,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
       series: [
         {
           name: ' ',
-          clockWise: true,
+          // clockWise: true,
           hoverAnimation: false,
           type: 'pie',
           center: ['50%', '50%'],
@@ -80,12 +80,12 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
                 normal: {
                   position: 'center',
                   formatter: '',
-                  textStyle: {
-                    fontSize: '22',
-                    fontFamily: variables.fontSecondary,
-                    fontWeight: '600',
-                    color: variables.fgHeading,
-                  },
+                  // textStyle: {
+                  //   fontSize: '22',
+                  //   fontFamily: variables.fontSecondary,
+                  //   fontWeight: '600',
+                  //   color: variables.fgHeading,
+                  // },
                 },
               },
               tooltip: {
@@ -132,7 +132,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
         },
         {
           name: ' ',
-          clockWise: true,
+          // clockWise: true,
           hoverAnimation: false,
           type: 'pie',
           center: ['50%', '50%'],
@@ -145,12 +145,12 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
                 normal: {
                   position: 'center',
                   formatter: '',
-                  textStyle: {
-                    fontSize: '22',
-                    fontFamily: variables.fontSecondary,
-                    fontWeight: '600',
-                    color: variables.fgHeading,
-                  },
+                  // textStyle: {
+                  //   fontSize: '22',
+                  //   fontFamily: variables.fontSecondary,
+                  //   fontWeight: '600',
+                  //   color: variables.fgHeading,
+                  // },
                 },
               },
               tooltip: {

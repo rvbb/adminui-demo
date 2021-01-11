@@ -39,3 +39,6 @@ Read detail [Dev Docs](https://github.com/akveo/nebular/blob/master/DEV_DOCS.md)
 + Customize theme at: @nebula/theme/services/style/themes
 
 
+### Test:
+localhost:4000
+

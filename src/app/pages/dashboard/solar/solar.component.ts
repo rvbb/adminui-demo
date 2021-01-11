@@ -55,7 +55,7 @@ export class SolarComponent implements AfterViewInit, OnDestroy {
         series: [
           {
             name: ' ',
-            clockWise: true,
+            // clockWise: true,
             hoverAnimation: false,
             type: 'pie',
             center: ['45%', '50%'],
@@ -68,12 +68,12 @@ export class SolarComponent implements AfterViewInit, OnDestroy {
                   normal: {
                     position: 'center',
                     formatter: '{d}%',
-                    textStyle: {
-                      fontSize: '22',
-                      fontFamily: config.variables.fontSecondary,
-                      fontWeight: '600',
-                      color: config.variables.fgHeading,
-                    },
+                    // textStyle: {
+                    //   fontSize: '22',
+                    //   fontFamily: config.variables.fontSecondary,
+                    //   fontWeight: '600',
+                    //   color: config.variables.fgHeading,
+                    // },
                   },
                 },
                 tooltip: {
@@ -120,7 +120,7 @@ export class SolarComponent implements AfterViewInit, OnDestroy {
           },
           {
             name: ' ',
-            clockWise: true,
+            // clockWise: true,
             hoverAnimation: false,
             type: 'pie',
             center: ['45%', '50%'],

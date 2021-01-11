@@ -19,10 +19,10 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
   @Input() liveUpdateChartData: { value: [string, number] }[];
 
   option: any;
-  echartsInstance;
+  echartsInstance: { setOption: (arg0: { series: { data: { value: [string, number]; }[]; }[]; }) => void; resize: () => void; };
 
   constructor(private theme: NbThemeService,
-              private layoutService: LayoutService) {
+    private layoutService: LayoutService) {
     this.layoutService.onChangeLayoutSize()
       .pipe(
         takeWhile(() => this.alive),
@@ -91,11 +91,11 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
         axisPointer: {
           type: 'shadow',
         },
-        textStyle: {
-          color: earningLineTheme.tooltipTextColor,
-          fontWeight: earningLineTheme.tooltipFontWeight,
-          fontSize: earningLineTheme.tooltipFontSize,
-        },
+        // textStyle: {
+        //   color: earningLineTheme.tooltipTextColor,
+        //   fontWeight: earningLineTheme.tooltipFontWeight,
+        //   fontSize: earningLineTheme.tooltipFontSize,
+        // },
         position: 'top',
         backgroundColor: earningLineTheme.tooltipBg,
         borderColor: earningLineTheme.tooltipBorderColor,
@@ -109,29 +109,30 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
           symbol: 'circle',
           sampling: 'average',
           itemStyle: {
-            normal: {
-              opacity: 0,
-            },
-            emphasis: {
-              opacity: 0,
-            },
+            // normal: {
+            //   opacity: 0,
+            // },
+            // emphasis: {
+            //   opacity: 0,
+            // },
           },
           lineStyle: {
-            normal: {
-              width: 0,
-            },
+            // normal: {
+            //   width: 0,
+            // },
           },
           areaStyle: {
-            normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                offset: 0,
-                color: earningLineTheme.gradFrom,
-              }, {
-                offset: 1,
-                color: earningLineTheme.gradTo,
-              }]),
-              opacity: 1,
-            },
+            // normal: {
+            //   // color: new  (<any>echarts).graphic.LinearGradient(0, 0, 0, 1, [{
+            //   //   offset: 0,
+            //   //   color: earningLineTheme.gradFrom,
+            //   // },
+            //   //  {
+            //   //   offset: 1,
+            //   //   color: earningLineTheme.gradTo,
+            //   // }]),
+            //   opacity: 1,
+            // },
           },
           data: this.liveUpdateChartData,
         },
@@ -141,11 +142,13 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
   }
 
   updateChartOptions(chartData: { value: [string, number] }[]) {
-    this.echartsInstance.setOption({
-      series: [{
-        data: chartData,
-      }],
-    });
+    if (this.echartsInstance) {
+      this.echartsInstance.setOption({
+        series: [{
+          data: chartData,
+        }],
+      });
+    }
   }
 
   onChartInit(ec) {

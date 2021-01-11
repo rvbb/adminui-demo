@@ -51,13 +51,13 @@ export class DashboardComponent implements OnDestroy {
 
   statusCardsByThemes: {
     default: CardSettings[];
-    cosmic: CardSettings[];
-    corporate: CardSettings[];
+    sea: CardSettings[];
+    golden: CardSettings[];
     dark: CardSettings[];
   } = {
     default: this.commonStatusCardsSet,
-    cosmic: this.commonStatusCardsSet,
-    corporate: [
+    sea: this.commonStatusCardsSet,
+    golden: [
       {
         ...this.lightCard,
         type: 'warning',

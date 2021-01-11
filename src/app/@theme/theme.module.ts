@@ -35,11 +35,10 @@ import {
   TwoColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
-import { COSMIC_THEME } from './styles/theme.cosmic';
-import { CORPORATE_THEME } from './styles/theme.corporate';
+import { SEA_THEME } from './styles/theme.sea';
+import { GOLDEN_THEME } from './styles/theme.golden';
 import { DARK_THEME } from './styles/theme.dark';
 import { SettingsComponent } from './components/settings/settings.component';
-// import { BLUE_THEME } from './styles/theme.blue';
 import { TranslateModule } from '@ngx-translate/core';
 
 const NB_MODULES = [
@@ -80,15 +79,15 @@ const PIPES = [
   declarations: [...COMPONENTS, ...PIPES],
 })
 export class ThemeModule {
-  static forRoot(): ModuleWithProviders {
-    return <ModuleWithProviders>{
+  static forRoot(): ModuleWithProviders<ThemeModule> {
+    return <ModuleWithProviders<ThemeModule>>{
       ngModule: ThemeModule,
       providers: [
         ...NbThemeModule.forRoot(
           {
             name: 'default',
           },
-          [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME ],
+          [DEFAULT_THEME, SEA_THEME, DARK_THEME, GOLDEN_THEME],
         ).providers,
       ],
     };

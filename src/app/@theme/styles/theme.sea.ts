@@ -1,10 +1,11 @@
-import { NbJSThemeOptions, COSMIC_THEME as baseTheme } from '@nebular/theme';
+// #7fcdff
+import { NbJSThemeOptions, DEFAULT_THEME as baseTheme } from '@nebular/theme';
 
 const baseThemeVariables = baseTheme.variables;
 
-export const COSMIC_THEME = {
-  name: 'cosmic',
-  base: 'cosmic',
+export const SEA_THEME = {
+  name: 'sea',
+  base: 'sea',
   variables: {
     temperature: {
       arcFill: [ '#2ec7fe', '#31ffad', '#7bff24', '#fff024', '#f7bd59' ],

@@ -58,11 +58,11 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
                 width: eTheme.tooltipLineWidth,
               },
             },
-            textStyle: {
-              color: eTheme.tooltipTextColor,
-              fontSize: 20,
-              fontWeight: eTheme.tooltipFontWeight,
-            },
+            // textStyle: {
+            //   color: eTheme.tooltipTextColor,
+            //   fontSize: 20,
+            //   fontWeight: eTheme.tooltipFontWeight,
+            // },
             position: 'top',
             backgroundColor: eTheme.tooltipBg,
             borderColor: eTheme.tooltipBorderColor,

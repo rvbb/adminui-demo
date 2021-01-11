@@ -37,7 +37,6 @@ export class SettingsComponent implements OnInit, OnDestroy {
       }      
     }    
 
-    console.log(this.currentTheme)
     this.themeService.onThemeChange()
       .pipe(
         map(({ name }) => name),

@@ -18,10 +18,26 @@
       "dom"
     ],
     "plugins": [
-      { "name": "tslint-language-service"}
+      {
+        "name": "tslint-language-service"
+      }
     ],
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "files": [
+    "src/main.ts",    
+    "src/polyfills.ts"
+  ],
+  "enableIvy": false,
+  "exclude": [
+    "node_modues",
+    "src/test.ts",
+    "**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "disableTypeScriptVersionCheck": true
+  },
+  "allowJs": false
 }

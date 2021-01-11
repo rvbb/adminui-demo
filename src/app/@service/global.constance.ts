@@ -29,8 +29,12 @@ export const THEMES = [
         name: 'Dark',
     },
     {
-        value: 'blue',
-        name: 'Bluetheme',
+        value: 'sea',
+        name: 'Sea',
+    },
+    {
+        value: 'golden',
+        name: 'Gold',
     }
 ];
 
@@ -45,9 +49,9 @@ export const ROLE_SUPERVISOR="supervisor";
 export const ROLE_STAFF="staff";
 
 // localStorage
-export const USERLS = "lmsadmin-user";
-export const THEMELS = "lmsadmin-theme"; //need persionalize to each user (suppose one device used by multi users)
-export const REMEMBERMELS = "lmsadmin-rememberaccount"; //need persionalize to each user (suppose one device used by multi users)
+export const USERLS = "adminX-user";
+export const THEMELS = "adminX-theme"; //need persionalize to each user (suppose one device used by multi users)
+export const REMEMBERMELS = "adminX-rememberaccount"; //need persionalize to each user (suppose one device used by multi users)
 //technical is easy: concatenate USER ID to localStorage key.
 
 // 3rd APIs

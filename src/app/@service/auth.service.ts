@@ -51,9 +51,9 @@ export class AuthService {
         var userAdmin: UserDto = {
             id: "1234354354656",
             role: ROLE_ADMIN,
-            loginName: "admin@smartosc.com",
+            loginName: "admin@adminX.com",
             fullName: "Hoang N.V",
-            email: "admin@smartosc.com",
+            email: "admin@adminX.com",
             dob: "11/03/1990",
             token: "adminheadadmin124zzz.middlexxxxxxxxx.endyyyyyyyy",
             avatar:"assets/images/hoangnv.jpg"
@@ -61,9 +61,9 @@ export class AuthService {
         var userSupervisor: UserDto = {
             id: "6677777777",
             role: ROLE_SUPERVISOR,
-            loginName: "supervisor@smartosc.com",
+            loginName: "supervisor@adminX.com",
             fullName: "Supervisor Ms",
-            email: "supervisor@smartosc.com",
+            email: "supervisor@adminX.com",
             dob: "10/03/1994",
             token: "headtsfddddddddddd.middlexxxxxxxxx.endyyyyyyyy",
             avatar:"assets/images/cover2.jpg"
@@ -83,11 +83,11 @@ export class AuthService {
             */
 
             // for test only
-            if (payload.email == "admin@smartosc.com") {
+            if (payload.email == "admin@adminX.com") {
                 result.userDto = userAdmin;
                 result.code = 0;
                 result.message = "success - admin";
-            } else if (payload.email == 'supervisor@smartosc.com') {
+            } else if (payload.email == 'supervisor@adminX.com') {
                 result.userDto = userSupervisor;
                 result.code = 0;
                 result.message = "success with user role is supervisor";

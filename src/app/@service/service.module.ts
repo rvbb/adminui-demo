@@ -18,8 +18,8 @@ import { AuthService } from './auth.service';
       throwIfAlreadyLoaded(parentModule, 'ServiceModule');
     }
   
-    static forRoot(): ModuleWithProviders {
-      return <ModuleWithProviders>{
+    static forRoot(): ModuleWithProviders<ServiceModule> {
+      return <ModuleWithProviders<ServiceModule>>{
         ngModule: ServiceModule,
         providers: [
           ThemeExtensionService, PermissionGranterService, AuthService

@@ -77,11 +77,11 @@ export class TrafficChartComponent implements AfterViewInit, OnDestroy {
             axisPointer: {
               type: 'shadow',
             },
-            textStyle: {
-              color: trafficTheme.tooltipTextColor,
-              fontWeight: trafficTheme.tooltipFontWeight,
-              fontSize: 16,
-            },
+            // textStyle: {
+            //   color: trafficTheme.tooltipTextColor,
+            //   fontWeight: trafficTheme.tooltipFontWeight,
+            //   fontSize: 16,
+            // },
             position: 'top',
             backgroundColor: trafficTheme.tooltipBg,
             borderColor: trafficTheme.tooltipBorderColor,
@@ -97,20 +97,20 @@ export class TrafficChartComponent implements AfterViewInit, OnDestroy {
               sampling: 'average',
               silent: true,
               itemStyle: {
-                normal: {
-                  color: trafficTheme.shadowLineDarkBg,
-                },
-                emphasis: {
-                  color: 'rgba(0,0,0,0)',
-                  borderColor: 'rgba(0,0,0,0)',
-                  borderWidth: 0,
-                },
+                // normal: {
+                //   color: trafficTheme.shadowLineDarkBg,
+                // },
+                // emphasis: {
+                //   color: 'rgba(0,0,0,0)',
+                //   borderColor: 'rgba(0,0,0,0)',
+                //   borderWidth: 0,
+                // },
               },
               lineStyle: {
-                normal: {
-                  width: 2,
-                  color: trafficTheme.shadowLineDarkBg,
-                },
+                // normal: {
+                //   width: 2,
+                //   color: trafficTheme.shadowLineDarkBg,
+                // },
               },
               data: this.points.map(p => p - 15),
             },

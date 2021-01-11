@@ -75,11 +75,11 @@ export class StatsAreaChartComponent implements AfterViewInit, OnDestroy {
             axisPointer: {
               type: 'shadow',
             },
-            textStyle: {
-              color: trafficTheme.tooltipTextColor,
-              fontWeight: trafficTheme.tooltipFontWeight,
-              fontSize: 16,
-            },
+            // textStyle: {
+            //   color: trafficTheme.tooltipTextColor,
+            //   fontWeight: trafficTheme.tooltipFontWeight,
+            //   fontSize: 16,
+            // },
             position: 'top',
             backgroundColor: trafficTheme.tooltipBg,
             borderColor: trafficTheme.tooltipBorderColor,
@@ -95,20 +95,20 @@ export class StatsAreaChartComponent implements AfterViewInit, OnDestroy {
               sampling: 'average',
               silent: true,
               itemStyle: {
-                normal: {
-                  color: trafficTheme.shadowLineDarkBg,
-                },
-                emphasis: {
-                  color: 'rgba(0,0,0,0)',
-                  borderColor: 'rgba(0,0,0,0)',
-                  borderWidth: 0,
-                },
+                // normal: {
+                //   color: trafficTheme.shadowLineDarkBg,
+                // },
+                // emphasis: {
+                //   color: 'rgba(0,0,0,0)',
+                //   borderColor: 'rgba(0,0,0,0)',
+                //   borderWidth: 0,
+                // },
               },
               lineStyle: {
-                normal: {
-                  width: 2,
-                  color: trafficTheme.shadowLineDarkBg,
-                },
+                // normal: {
+                //   width: 2,
+                //   color: trafficTheme.shadowLineDarkBg,
+                // },
               },
               data: this.points.map(p => p - 15),
             },
@@ -118,36 +118,36 @@ export class StatsAreaChartComponent implements AfterViewInit, OnDestroy {
               symbolSize: 6,
               sampling: 'average',
               itemStyle: {
-                normal: {
-                  color: trafficTheme.itemColor,
-                  borderColor: trafficTheme.itemBorderColor,
-                  borderWidth: 2,
-                },
-                emphasis: {
-                  color: 'white',
-                  borderColor: trafficTheme.itemEmphasisBorderColor,
-                  borderWidth: 2,
-                },
+                // normal: {
+                //   color: trafficTheme.itemColor,
+                //   borderColor: trafficTheme.itemBorderColor,
+                //   borderWidth: 2,
+                // },
+                // emphasis: {
+                //   color: 'white',
+                //   borderColor: trafficTheme.itemEmphasisBorderColor,
+                //   borderWidth: 2,
+                // },
               },
               lineStyle: {
-                normal: {
-                  width: 2,
-                  color: trafficTheme.lineBg,
-                  shadowColor: trafficTheme.lineBg,
-                  shadowBlur: trafficTheme.lineShadowBlur,
-                },
+                // normal: {
+                //   width: 2,
+                //   color: trafficTheme.lineBg,
+                //   shadowColor: trafficTheme.lineBg,
+                //   shadowBlur: trafficTheme.lineShadowBlur,
+                // },
               },
               areaStyle: {
-                normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                    offset: 0,
-                    color: trafficTheme.gradFrom,
-                  }, {
-                    offset: 1,
-                    color: trafficTheme.gradTo,
-                  }]),
-                  opacity: 1,
-                },
+                // normal: {
+                //   color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                //     offset: 0,
+                //     color: trafficTheme.gradFrom,
+                //   }, {
+                //     offset: 1,
+                //     color: trafficTheme.gradTo,
+                //   }]),
+                //   opacity: 1,
+                // },
               },
               data: this.points,
             },

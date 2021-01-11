@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lmsadmin": {
+    "adminX": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,8 +11,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "preserveSymlinks": true,
-            "rebaseRootRelativeCssUrls": true,
+            "allowedCommonJsDependencies": ["lodash"],
+            "preserveSymlinks": true,            
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -20,7 +20,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/lms-admin.png",
+              "src/adminX.png",
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images",
@@ -39,7 +39,7 @@
               "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
               "node_modules/leaflet/dist/leaflet.css",
               "src/app/@theme/styles/styles.scss",
-              "src/app/lms-admin.scss"
+              "src/app/cooperative.scss"
             ],
             "scripts": [
               "node_modules/pace-js/pace.min.js",
@@ -76,19 +76,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lmsadmin:build",
-            "port":20202
+            "browserTarget": "adminX:build",
+            "port":4000
           },
           "configurations": {
             "production": {
-              "browserTarget": "lmsadmin:build:production"
+              "browserTarget": "adminX:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lmsadmin:build"
+            "browserTarget": "adminX:build"
           }
         },
         "test": {
@@ -119,12 +119,11 @@
               "node_modules/nebular-icons/scss/nebular-icons.scss",
               "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
               "src/app/@theme/styles/styles.scss",
-              "src/app/lms-admin.scss"
+              "src/app/cooperative.scss"
             ],
             "assets": [
-              "src/assets",
+              "src/assets",              
               "src/favicon.ico",
-              "src/favicon.png",
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images",
@@ -146,7 +145,7 @@
         }
       }
     },
-    "lmsadmin-e2e": {
+    "adminX-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -155,7 +154,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "lmsadmin:serve"
+            "devServerTarget": "adminX:serve"
           }
         },
         "lint": {
@@ -170,7 +169,7 @@
       }
     }
   },
-  "defaultProject": "lms-admin",
+  "defaultProject": "adminX",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "ngx",

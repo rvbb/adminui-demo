@@ -1,10 +1,11 @@
-import { NbJSThemeOptions, DARK_THEME as baseTheme } from '@nebular/theme';
+// #ffd700
+import { NbJSThemeOptions, DEFAULT_THEME as baseTheme } from '@nebular/theme';
 
 const baseThemeVariables = baseTheme.variables;
 
-export const blue_THEME = {
-  name: 'blue',
-  base: 'blue',
+export const GOLDEN_THEME= {
+  name: 'golden',
+  base: 'golden',
   variables: {
     temperature: {
       arcFill: [

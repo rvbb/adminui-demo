@@ -106,11 +106,11 @@ export class TrafficBarChartComponent implements AfterViewInit, OnDestroy, OnCha
             axisPointer: {
               type: 'shadow',
             },
-            textStyle: {
-              color: trafficTheme.tooltipTextColor,
-              fontWeight: trafficTheme.tooltipFontWeight,
-              fontSize: 16,
-            },
+            // textStyle: {
+            //   color: trafficTheme.tooltipTextColor,
+            //   fontWeight: trafficTheme.tooltipFontWeight,
+            //   fontSize: 16,
+            // },
             position: 'top',
             backgroundColor: trafficTheme.tooltipBg,
             borderColor: trafficTheme.tooltipBorderColor,
