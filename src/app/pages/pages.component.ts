@@ -44,35 +44,35 @@ export class PagesComponent {
   }
 
   private translateMenu(): void {
-    this.menu.forEach((XMenuItem: XMenuItem) => {
-      this.translateMenuTitle(XMenuItem);
+    this.menu.forEach((xMenuItem: XMenuItem) => {
+      this.translateMenuTitle(xMenuItem);
     });
   }
 
-  private translateMenuTitle(XMenuItem: XMenuItem, prefix: string = ''): void {
+  private translateMenuTitle(xMenuItem: XMenuItem, prefix: string = ''): void {
     let key = '';
     try {
       key = (prefix !== '')
-        ? PagesComponent.getXMenuItemKey(XMenuItem, prefix)
-        : PagesComponent.getXMenuItemKey(XMenuItem);
+        ? PagesComponent.getXMenuItemKey(xMenuItem, prefix)
+        : PagesComponent.getXMenuItemKey(xMenuItem);
     }
     catch (e) { return; }
     this.translate.get(key).subscribe((translation: string) => {
-      XMenuItem.title = translation;
+      xMenuItem.title = translation;
     });
-    if (XMenuItem.children != null) {
-      XMenuItem.children.forEach((childXMenuItem: XMenuItem) => {
+    if (xMenuItem.children != null) {
+      xMenuItem.children.forEach((childXMenuItem: XMenuItem) => {
         this.translateMenuTitle(childXMenuItem, PagesComponent.trimLastSelector(key));
       });
     }
   }
-  private static getXMenuItemKey(XMenuItem: XMenuItem, prefix: string = 'menu'): string {
-    if (XMenuItem.translateKey == null) {
+  private static getXMenuItemKey(xMenuItem: XMenuItem, prefix: string = 'menu'): string {
+    if (xMenuItem.translateKey == null) {
       throw new Error('"translateKey" is missed. Check and declare it.');
     }
 
-    const key = XMenuItem.translateKey.toLowerCase();
-    if (XMenuItem.children != null) {
+    const key = xMenuItem.translateKey.toLowerCase();
+    if (xMenuItem.children != null) {
       return prefix + '.' + key + '.' + key;
     }
     return prefix + '.' + key;

@@ -62,8 +62,21 @@ $nb-themes: nb-register-theme(
     color-primary-700: #91cbf3,
     color-primary-800: #70b0f3,
     color-primary-900: #5e94ff,
+
+    layout-padding-top: 2.25rem,
+    menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
     card-header-with-select-padding-top: 0.5rem,
-    card-header-with-select-padding-bottom: 0.5rem
+    card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    slide-out-background: linear-gradient(270deg, #70b0f3 0%, #5e94ff 100%),
+    slide-out-shadow-color: 0 4px 14px 0 #caf8fe,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #caf8fe
   ),
   sea,
   sea
@@ -74,7 +87,6 @@ $nb-themes: nb-register-theme(
     text-basic-color: color-basic-800,
     text-disabled-color: color-basic-600,
     color-primary-100: #fff7cc,
-    //fffbe5
     color-primary-200: #fff3b2,
     color-primary-300: #ffef99,
     color-primary-400: #ffeb7f,
@@ -83,9 +95,63 @@ $nb-themes: nb-register-theme(
     color-primary-700: #ffdf32,
     color-primary-800: #ffdb19,
     color-primary-900: #ffd700,
+    layout-padding-top: 2.25rem,
+    menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
     card-header-with-select-padding-top: 0.5rem,
     card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    slide-out-background: linear-gradient(270deg, #ffdf32 0%, #ffd700 100%),
+    slide-out-shadow-color: 0 4px 14px 0 #ffeb7f,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #ffeb7f,
   ),
   golden,
   golden
+);
+
+$nb-themes: nb-register-theme(
+  (
+    layout-padding-top: 2.25rem,
+    menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
+    card-header-with-select-padding-top: 0.5rem,
+    card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
+    slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+  ),
+  corporate,
+  corporate
+);
+
+$nb-themes: nb-register-theme(
+  (
+    layout-padding-top: 2.25rem,
+    menu-item-icon-margin: 0 0.5rem 0 0,
+    card-height-tiny: 13.5rem,
+    card-height-small: 21.1875rem,
+    card-height-medium: 28.875rem,
+    card-height-large: 36.5625rem,
+    card-height-giant: 44.25rem,
+    card-margin-bottom: 1.875rem,
+    card-header-with-select-padding-top: 0.5rem,
+    card-header-with-select-padding-bottom: 0.5rem,
+    select-min-width: 6rem,
+    slide-out-background: linear-gradient(270deg, #5a37b8 0%, #29157a 100%),
+    slide-out-shadow-color: 0 4px 14px 0 #a16eff,
+    slide-out-shadow-color-rtl: 0 4px 14px 0 #a16eff,
+  ),
+  cosmic,
+  cosmic
 );
