@@ -21,7 +21,7 @@
     "../src/*.ts",
     "../src/**/*.ts",
     "../node_modules/@nebular/**/*.ts"
-  ]
-  // "resolveJsonModule": true,
+  ],
+  "resolveJsonModule": true,
   // "esModuleInterop": true
 }

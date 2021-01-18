@@ -5,6 +5,8 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './exception/not-found/not-found.component';
+import { BopoComponent } from './pobo/bopo.component';
+import { CopoComponent } from './copo/copo.component';
 
 const routes: Routes = [{
   path: '',
@@ -31,6 +33,19 @@ const routes: Routes = [{
     {
       path: '**',
       component: NotFoundComponent,
+    },
+    {
+      path: 'bopo',
+      component: BopoComponent,
+    },
+    {
+      path: 'cobo',
+      component: CopoComponent,
+    },
+    {
+      path: 'payment',
+      loadChildren: () => import('./payment/payment.module')
+        .then(m => m.PaymentModule),
     },
   ],
 }];

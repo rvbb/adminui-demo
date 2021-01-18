@@ -1,4 +1,9 @@
-/**
- * Payments on-behalf-of subsidiaries (Chi hộ)
- * Created by Hoang N.V, 16 Oct 2019.
- **/
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'ngx-bopo',
+    styleUrls: ['./bopo.component.scss'],
+    templateUrl: './bopo.component.html',
+  })
+export class BopoComponent {
+}

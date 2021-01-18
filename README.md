@@ -1,9 +1,6 @@
 * Copyright N.V Hoang.
 
 This template may appied for all administration project.
-With free-style UI, should use template "frontend-general <http://os_hoangnv1@bitbucket.digital.vn/scm/webapp/frontend-general.git>"
-### Document to develop
-Read detail [Dev Docs](https://github.com/akveo/nebular/blob/master/DEV_DOCS.md).
 
 ### Technologies:
 
@@ -14,8 +11,6 @@ Read detail [Dev Docs](https://github.com/akveo/nebular/blob/master/DEV_DOCS.md)
 - High resolution
 - Flexibly configurable themes
 - Authentication module with multiple providers
-- 40+ Angular Components
-- 60+ Usage Examples
 
 ### Bug Fixes
 

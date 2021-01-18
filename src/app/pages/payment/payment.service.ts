@@ -1,4 +1,11 @@
-/**
- * Service for POBO
- * Created by Hoang N.V, 16 Oct 2019.
- **/
+import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+@Injectable()
+export class PaymentService {
+    constructor(private translate:TranslateService){}
+
+    xx(yy:string){
+    }
+
+}

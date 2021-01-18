@@ -1,8 +1,38 @@
-// @import "~@nebular/theming/core/function";
-// @import "~@nebular/theming/core/mixins";
-// @import 'default';
 
 $theme: (
+  
+  color-primary-100: #fff7cc,
+  color-primary-200: #fff3b2,
+  color-primary-300: #ffef99,
+  color-primary-400: #ffeb7f,
+  color-primary-500: #ffe766,
+  color-primary-600: #ffe34c,
+  color-primary-700: #ffdf32,
+  color-primary-800: #ffdb19,
+  color-primary-900: #ffd700,
+  color-primary-transparent-100: rgba(231, 211, 25, 0.9),
+  color-primary-transparent-200: rgba(231, 211, 25, 0.16),
+  color-primary-transparent-300: rgba(231, 211, 25, 0.24),
+  color-primary-transparent-400: rgba(231, 211, 25, 0.32),
+  color-primary-transparent-500: rgba(231, 211, 25, 0.4),
+  color-primary-transparent-600: rgba(231, 211, 25, 0.48),
+  color-basic-1000: #ffd700,
+  color-basic-1100: #ffd700,
+  color-basic-100: #fff7cc,
+  color-basic-200: #fff3b2,
+  color-basic-300: #ffef99,
+  color-basic-400: #ffeb7f,
+  color-basic-500: #ffe766,
+  color-basic-600: #ffe34c,
+  color-basic-700: #ffdf32,
+  color-basic-800: #ffdb19,
+  color-basic-900: #ffd700,
+  color-basic-transparent-100: rgba(231, 211, 25, 0.08),
+  color-basic-transparent-200: rgba(231, 211, 25, 0.16),
+  color-basic-transparent-300: rgba(231, 211, 25, 0.24),
+  color-basic-transparent-400: rgba(231, 211, 25, 0.32),
+  color-basic-transparent-500: rgba(231, 211, 25, 0.4),
+  color-basic-transparent-600: rgba(231, 211, 25, 0.48),
   background-basic-color-1: color-basic-800,
   background-basic-color-2: color-basic-900,
   background-basic-color-3: color-basic-1000,
@@ -33,5 +63,4 @@ $theme: (
   outline-color: color-basic-700,
 );
 
-// register the theme
 $nb-themes: nb-register-theme($theme, golden, default);

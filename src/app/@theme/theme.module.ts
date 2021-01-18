@@ -11,7 +11,7 @@ import {
   NbButtonModule,
   NbSelectModule,
   NbIconModule,
-  NbThemeModule,
+  NbThemeModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbSecurityModule } from '@nebular/security';
@@ -36,6 +36,8 @@ import {
 } from './layouts';
 import { DEFAULT_THEME } from './styles/theme.default';
 import { SEA_THEME } from './styles/theme.sea';
+import { COSMIC_THEME } from './styles/theme.cosmic';
+import { CORPORATE_THEME } from './styles/theme.corporate';
 import { GOLDEN_THEME } from './styles/theme.golden';
 import { DARK_THEME } from './styles/theme.dark';
 import { SettingsComponent } from './components/settings/settings.component';
@@ -87,7 +89,7 @@ export class ThemeModule {
           {
             name: 'default',
           },
-          [DEFAULT_THEME, SEA_THEME, DARK_THEME, GOLDEN_THEME],
+          [DEFAULT_THEME, SEA_THEME, DARK_THEME, GOLDEN_THEME, CORPORATE_THEME, COSMIC_THEME],
         ).providers,
       ],
     };

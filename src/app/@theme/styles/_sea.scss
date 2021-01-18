@@ -1,37 +1,59 @@
-// @import "~@nebular/theme/theming/core/function";
-// @import "~@nebular/theme/theming/core/mixins";
-// @import 'default';
-
 $theme: (
+  color-primary-100: #faf7ff,
+  color-primary-200: #ece3ff,
+  color-primary-300: #fcffff,
+  color-primary-400: #fcffff,
+  color-primary-500: #caf8fe,
+  color-primary-600: #ace5f5,
+  color-primary-700: #91cbf3,
+  color-primary-800: #70b0f3,
+  color-primary-900: #5e94ff,
+  color-primary-transparent-100: rgba(94,148,255, 0.9),
+  color-primary-transparent-200: rgba(94,148,255, 0.16),
+  color-primary-transparent-300: rgba(94,148,255, 0.24),
+  color-primary-transparent-400: rgba(94,148,255, 0.32),
+  color-primary-transparent-500: rgba(94,148,255, 0.4),
+  color-primary-transparent-600: rgba(94,148,255, 0.48),
+  color-basic-1000: #4167b2,
+  color-basic-1100: #385899,
+  color-basic-100: #faf7ff,
+  color-basic-200: #ece3ff,
+  color-basic-300: #fcffff,
+  color-basic-400: #fcffff,
+  color-basic-500: #caf8fe,
+  color-basic-600: #ace5f5,
+  color-basic-700: #91cbf3,
+  color-basic-800: #70b0f3,
+  color-basic-900: #5e94ff,
+  color-basic-transparent-100: rgba(94,148,255, 0.08),
+  color-basic-transparent-200: rgba(94,148,255, 0.16),
+  color-basic-transparent-300: rgba(94,148,255, 0.24),
+  color-basic-transparent-400: rgba(94,148,255, 0.32),
+  color-basic-transparent-500: rgba(94,148,255, 0.4),
+  color-basic-transparent-600: rgba(94,148,255, 0.48),
   background-basic-color-1: color-basic-800,
   background-basic-color-2: color-basic-900,
   background-basic-color-3: color-basic-1000,
   background-basic-color-4: color-basic-1100,
-
   border-basic-color-1: color-basic-800,
   border-basic-color-2: color-basic-900,
   border-basic-color-3: color-basic-1000,
   border-basic-color-4: color-basic-1100,
   border-basic-color-5: color-basic-1100,
-
   background-alternative-color-1: color-basic-100,
   background-alternative-color-2: color-basic-200,
   background-alternative-color-3: color-basic-300,
   background-alternative-color-4: color-basic-400,
-
   border-alternative-color-1: color-basic-100,
   border-alternative-color-2: color-basic-200,
   border-alternative-color-3: color-basic-300,
   border-alternative-color-4: color-basic-400,
   border-alternative-color-5: color-basic-500,
-
   text-basic-color: color-basic-100,
   text-alternate-color: color-basic-900,
   text-disabled-color: color-basic-transparent-600,
-
-  shadow: 0 0.5rem 1rem 0 #1a1f33,
+  shadow: 0 0.5rem 1rem #5485e5,
   outline-color: color-basic-700,
 );
 
-// register the theme
 $nb-themes: nb-register-theme($theme, sea, default);

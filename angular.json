@@ -11,7 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["lodash"],
+            "allowedCommonJsDependencies": ["lodash", "rxjs-compat"],
             "preserveSymlinks": true,            
             "outputPath": "dist",
             "index": "src/index.html",

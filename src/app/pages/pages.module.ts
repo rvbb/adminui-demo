@@ -8,6 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ExceptionModule } from './exception/exception.module';
+import { PaymentModule } from './payment/payment.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ExceptionModule } from './exception/exception.module';
     NbMenuModule,
     DashboardModule,
     ECommerceModule,
-    ExceptionModule    
+    ExceptionModule,
+    PaymentModule
   ],
   declarations: [
     PagesComponent,
