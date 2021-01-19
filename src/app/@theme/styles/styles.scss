@@ -1,7 +1,5 @@
 @import "./font";
 
-@import "~angular-tree-component/dist/angular-tree-component.css";
-
 @import "themes";
 
 @import "~@nebular/theme/styles/globals";
@@ -23,4 +21,4 @@
   @include ngx-layout();
   @include ngx-pace-theme();
   @include nb-overrides();
-} ;
+};
