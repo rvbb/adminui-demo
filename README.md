@@ -1,38 +1,24 @@
-* Copyright N.V Hoang.
+* Copyright N.V Hoang 2021.
 
 This template may appied for all administration project.
 
 ### Technologies:
 
-- Angular 8+ & Typescript
-- Bootstrap 4+ & SCSS
-- Responsive layout
-- RTL support
-- High resolution
-- Flexibly configurable themes
+- Angular 10 & Typescript 3.9
 - Authentication module with multiple providers
 
-### Bug Fixes
+### TODO:
+- TranslateModule no need import in every module
+- Translate Loader use XTranslateLoader
+- Create service to work with APIs
+- Update Sea and Gold theme
 
-* **typography:** 
-
-
-### Features
-
-* in next version
-
-### Task need done to customize smoothly
-* Should use only one Chart library: d3
-* Should use only one Map library: google map
-* Should use only one Editor library: ckeditor
-* Should use only one font icon that made by fontello.com or icomoon.io or other. Purpose make smallest size of icons. Default themes use much more font icon libraries, each is NOT light-weight.
-* Design Setting button and swith button: may let them to footer bar(not used usually).
-
-** Add "permission grant" module, component or directive.
-** Customize authentication UI
-
-+ Customize theme at: @nebula/theme/services/style/themes
-
+### More TODO
+* Remove Chart library, keep d3
+* Remove Map library, keep google map
+* Remove Editor library: ckeditor
+* Remove font-icon. Use one (via fontello.com or icomoon.io or other). Purpose make smallest size of icons. 
+* Add "permission grant" module, component or directive.
 
 ### Test:
 localhost:20210
