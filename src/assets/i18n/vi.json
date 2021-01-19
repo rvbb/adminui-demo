@@ -10,7 +10,7 @@
     "gender": "Giới tính",
     "bod": "Ngày sinh",
     "password": "Mật khẩu",
-    "register":"Đăng ký"
+    "register": "Đăng ký"
   },
   "caption": {
     "theme": "Mẫu UI",
@@ -54,5 +54,15 @@
       "request": "Yêu cầu mật khẩu"
     },
     "logout": "Đang đăng xuất ..., vui lòng chờ trong giây lát!"
+  },
+  "notfound": {
+    "title": "Oh! Không Tìm Thấy",
+    "detail": "Tài liệu bạn tìm không tồn tại hoặc không có quyền truy cập",
+    "button": "Về trang Dashboard"
+  },
+  "global": {
+    "activity": "Hoạt động",
+    "logout": "Đăng xuất",
+    "profile": "Hồ sơ cá nhân"
   }
 }

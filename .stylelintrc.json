@@ -4,8 +4,6 @@
     "color-no-invalid-hex": true,
 
     "function-calc-no-unspaced-operator": true,
-    "function-comma-space-after": "always-single-line",
-    "function-comma-space-before": "never",
     "function-name-case": "lower",
     "function-whitespace-after": "always",
 

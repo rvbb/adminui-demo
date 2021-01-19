@@ -11,7 +11,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["lodash", "rxjs-compat"],
+            "allowedCommonJsDependencies": [
+              "lodash", 
+              "rxjs-compat",
+              "angular2-chartjs"
+            ],
             "preserveSymlinks": true,            
             "outputPath": "dist",
             "index": "src/index.html",
@@ -20,7 +24,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/adminX.png",
+              "src/adminX.ico",
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images",
@@ -94,6 +98,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+          
             "main": "src/test.ts",
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",

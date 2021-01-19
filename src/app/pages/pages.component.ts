@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { PermissionGranterService } from '../@service/permission-granter.service';
 import { Subscription } from 'rxjs';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
@@ -17,11 +17,10 @@ import { Router } from '@angular/router';
     </ngx-one-column-layout>
   `,
 })
-export class PagesComponent {
+export class PagesComponent implements OnInit, OnDestroy {
 
   permissionGranterSubs: Subscription;
-  // #beremoved
-  user: any = { };
+  user: any = {};
   menu: XMenuItem[];
 
   constructor(private permissionGranterService: PermissionGranterService,
@@ -29,13 +28,13 @@ export class PagesComponent {
     private router: Router) {
   }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.user = Utils.readls(USERLS, true);
     //@todo: re-verify user is authenticated or not? Need check with difference way.
     if (!this.user || !this.user.token) {
       this.router.navigateByUrl(DEFAULT_PAGE);
     } else {
-      this.menu = this.permissionGranterService.getGrantedMenu(this.user.role);      
+      this.menu = this.permissionGranterService.getGrantedMenu(this.user.role);
       this.translateMenu();
       this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
         this.translateMenu();
@@ -44,6 +43,10 @@ export class PagesComponent {
   }
 
   private translateMenu(): void {
+    if(!this.menu){
+      console.debug("Error: could not load menus");
+      return;
+    }
     this.menu.forEach((xMenuItem: XMenuItem) => {
       this.translateMenuTitle(xMenuItem);
     });
@@ -60,7 +63,7 @@ export class PagesComponent {
     this.translate.get(key).subscribe((translation: string) => {
       xMenuItem.title = translation;
     });
-    if (xMenuItem.children != null) {
+    if (xMenuItem.children && xMenuItem.children.length > 0) {
       xMenuItem.children.forEach((childXMenuItem: XMenuItem) => {
         this.translateMenuTitle(childXMenuItem, PagesComponent.trimLastSelector(key));
       });
@@ -82,6 +85,10 @@ export class PagesComponent {
     const keyParts = key.split('.');
     keyParts.pop();
     return keyParts.join('.');
+  }
+
+  ngOnDestroy() {
+    // this.translate.onLangChange.unsubscribe();
   }
 
 }

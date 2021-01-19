@@ -2,7 +2,6 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
-import { ThemeExtensionService } from '../../../@service/theme-extension.service';
 import { LANGUAGE_CHANGE, THEMES, DEFAULT_LANGUAGE, DEFAULT_THEME, THEMELS } from '../../../@service/global.constance';
 import { ThemeLocalStorageDto } from '../../../@service/global.interface';
 import Utils from '../../../@service/global.util';

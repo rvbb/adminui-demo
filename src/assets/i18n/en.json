@@ -10,7 +10,7 @@
         "gender": "Gender",
         "bod": "BOD",
         "password": "Passowrd",
-        "register":"Register"
+        "register": "Register"
     },
     "caption": {
         "theme": "Theme",
@@ -54,5 +54,17 @@
             "request": "Request Password"
         },
         "logout": "Logging out ..., please wait!"
+    },
+
+    "notfound": {
+        "title": "Oops! 404 Page Not Found",
+        "detail":"The page you were looking for does not exist",
+        "button": "Go Dashboard"
+    },
+    "global": {
+        "activity": "Activity",
+        "logout": "Logout",
+        "profile": "Profile"
     }
+
 }

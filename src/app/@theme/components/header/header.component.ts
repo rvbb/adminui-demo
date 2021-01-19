@@ -6,6 +6,7 @@ import { map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 import { AuthService } from '../../../@service/auth.service';
+import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'ngx-header',
@@ -21,15 +22,18 @@ export class HeaderComponent implements OnInit, OnDestroy {
   userMenu = [
     {
       code: 'activity',
-      title: 'Activity'
+      title: 'Activity',
+      translateKey: 'global.activity'
     },
     {
       code: 'profile',
-      title: 'Profile'
+      title: 'Profile',
+      translateKey: 'global.profile'
     },
     {
       code: 'logout',
-      title: 'Log out'
+      title: 'Log out',
+      translateKey: 'global.logout',
     }];
 
   constructor(private sidebarService: NbSidebarService,
@@ -38,7 +42,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
     private authService: AuthService,
     private layoutService: LayoutService,
     private breakpointService: NbMediaBreakpointsService,
-    private router: Router) {
+    private router: Router,
+    private translateService: TranslateService) {
 
     menuService.onItemClick()
       .subscribe(bag => {
@@ -50,7 +55,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
           this.router.navigateByUrl('/auth/logout');
         }
       });
+  }
 
+  private translateAccountMenu() {
+    this.userMenu.forEach((item) => {
+      this.translateService.get(item.translateKey).subscribe((translatedText: string) => {
+        item.title = translatedText;
+      });
+    });
   }
 
   ngOnInit() {
@@ -67,11 +79,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
         takeUntil(this.destroy$),
       )
       .subscribe((isLessThanXl: boolean) => this.userPictureOnly = isLessThanXl);
+
+      this.translateAccountMenu();
+      this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+        this.translateAccountMenu();
+      });
   }
 
   ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
+    // this.translateService.onLangChange.unsubscribe();
   }
 
   toggleSidebar(): boolean {
@@ -89,5 +107,4 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.sidebarService.toggle(false, 'settings-sidebar');
     return false;
   }
-
 }

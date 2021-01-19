@@ -1,6 +1,5 @@
 /**
- * Created by Hoang NV<hoangnv01@getMaxListeners.com> at 22 Oct 2019
- * 
+ * Created by Hoang NV<hoangnv01@gmail.com> at 22 Oct 2019
 **/
 import { Injectable } from '@angular/core';
 import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
@@ -20,7 +19,6 @@ export class AuthInterceptor implements HttpInterceptor {
     }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        // check whether is loged in?
         this.authService.isAuthenticated()
             .pipe(takeUntil(this.destroy$))
             .subscribe(loggedin => {

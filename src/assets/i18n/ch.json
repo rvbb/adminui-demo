@@ -55,4 +55,11 @@
         },
         "logout":"正在注销...，请稍候！"
     }
+    ,
+
+    "notfound": {
+        "title": "404 Page Not Found",
+        "detail":"The page you were looking for does not exist",
+        "button": "Go Dashboard"
+    }
 }

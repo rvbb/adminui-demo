@@ -15,13 +15,13 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts",
-    "../node_modules/@nebular/**/*.spec.ts"
+    "../node_modules/@nebular/**/*.spec.ts",
+    "../src/environments/environment.prod.ts",
+    "../src/environments/environment.ts"
   ],
   "include": [
     "../src/*.ts",
     "../src/**/*.ts",
     "../node_modules/@nebular/**/*.ts"
-  ],
-  "resolveJsonModule": true,
-  // "esModuleInterop": true
+  ]
 }

@@ -35,27 +35,21 @@ import { AuthInterceptor } from './@service/auth.interceptor';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-
     ThemeModule.forRoot(),
-
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
     NbDatepickerModule.forRoot(),
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
     NbToastrModule.forRoot(),
-
     NbChatModule.forRoot({
       messageGoogleMapKey: GOOGLEMAPAPI_KEY,
     }),
     CoreModule.forRoot(),
-
-    ServiceModule.forRoot(),
-
-    // i18n with ngx-translate
+    ServiceModule.forRoot(),    
     TranslateModule.forRoot({
       loader: {
-        provide: TranslateLoader,
+        provide: TranslateLoader, // @TODO: may use xtranslate.loader.ts
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]        
       }
