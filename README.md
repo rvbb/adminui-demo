@@ -20,6 +20,9 @@ This template may appied for all administration project.
 * Remove font-icon. Use one (via fontello.com or icomoon.io or other). Purpose make smallest size of icons. 
 * Add "permission grant" module, component or directive.
 
+### Code
+- npm install ngx-translate-messageformat-compiler messageformat --save
+
 ### Test:
 localhost:20210
 
