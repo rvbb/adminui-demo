@@ -12,10 +12,6 @@
     "password": "Mật khẩu",
     "register": "Đăng ký"
   },
-  "caption": {
-    "theme": "Mẫu UI",
-    "lang": "Ngôn ngữ"
-  },
   "menu": {
     "dashboard": "Thống kê",
     "payment": {
@@ -63,6 +59,9 @@
   "global": {
     "activity": "Hoạt động",
     "logout": "Đăng xuất",
-    "profile": "Hồ sơ cá nhân"
+    "profile": "Hồ sơ cá nhân",
+    "theme": "Mẫu UI",
+    "lang": "Ngôn ngữ",
+    "notifyme": "Notify me"
   }
 }

@@ -17,7 +17,7 @@ export class PermissionGranterService {
         {
             title: 'Thống kê',
             translateKey: "dashboard",
-            icon: 'shopping-cart-outline',
+            icon: 'home-outline',
             link: '/pages/dashboard',
             home: true,
         },
@@ -42,7 +42,7 @@ export class PermissionGranterService {
     MENU_ITEMS_ADMIN: XMenuItem[] = [
         {
             title: 'Thống kê',
-            icon: 'home-outline',
+            icon: 'cube-outline',
             link: '/pages/iot-dashboard',
             home: true,
             translateKey: "dashboard"
@@ -67,7 +67,7 @@ export class PermissionGranterService {
         {
             title: 'COBO',
             translateKey: 'cobo',
-            icon: 'globe-2-outline',
+            icon: 'percent-outline',
             children: [
                 {
                     title: 'COBO A',
@@ -84,7 +84,7 @@ export class PermissionGranterService {
         {
             title: 'POBO',
             translateKey: 'pobo',
-            icon: 'globe-2-outline',
+            icon: 'pantone-outline',
             link: '/pages/pobo',
         },
         {

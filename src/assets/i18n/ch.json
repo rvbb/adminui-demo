@@ -12,10 +12,6 @@
         "password":"密码",
         "register":"Register"
     },
-    "caption": {
-        "lang": "郎",
-        "theme": "主题"
-    },
     "menu": {
         "dashboard": "仪表板",
         "payment": {
@@ -60,6 +56,14 @@
     "notfound": {
         "title": "404 Page Not Found",
         "detail":"The page you were looking for does not exist",
-        "button": "Go Dashboard"
+        "button": "Go Dashboard"       
+    },
+    "global": {
+        "activity": "Activity",
+        "logout": "Logout",
+        "profile": "Profile",
+        "lang": "郎",
+        "theme": "主题",
+        "notifyme": "Notify me"
     }
 }

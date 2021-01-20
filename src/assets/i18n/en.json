@@ -12,10 +12,6 @@
         "password": "Passowrd",
         "register": "Register"
     },
-    "caption": {
-        "theme": "Theme",
-        "lang": "Language"
-    },
     "menu": {
         "dashboard": "Dashboard",
         "payment": {
@@ -64,7 +60,10 @@
     "global": {
         "activity": "Activity",
         "logout": "Logout",
-        "profile": "Profile"
+        "profile": "Profile",
+        "theme": "Theme",
+        "lang": "Language",
+        "notifyme": "Notify me"
     }
 
 }

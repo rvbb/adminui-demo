@@ -45,10 +45,9 @@ import { FormsModule } from '@angular/forms';
     NbListModule,
     NbIconModule,
     NbButtonModule,
-    NgxEchartsModule
-    // .forRoot({
-    //   echarts: () => import('echarts')
-    // }),
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
   declarations: [
     DashboardComponent,

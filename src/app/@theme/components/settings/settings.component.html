@@ -1,15 +1,21 @@
 <div class="settings-container">
-  <span class="subheader" translate>caption.theme</span>
+  <span class="subheader" translate>global.theme</span>
   <div class="settings-theme settings-row">
     <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="warning">
       <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
     </nb-select>
   </div>
 
-  <span class="subheader" translate>caption.lang</span>
+  <span class="subheader" translate>global.lang</span>
   <div class="settings-language settings-row">
     <nb-select [selected]="currentLanguage" (selectedChange)="switchLanguage($event)" status="success">
       <nb-option *ngFor="let lang of languages" [value]="lang.code"> {{ lang.des }}</nb-option>
     </nb-select>
+  </div>
+
+  <div class="bottom">
+    <div class="settings-language settings-row">
+      <nb-checkbox [checked]="checked" (checkedChange)="notyfyMe($event)" translate>global.notifyme</nb-checkbox>
+    </div>
   </div>
 </div>

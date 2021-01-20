@@ -72,4 +72,6 @@ export class SettingsComponent implements OnInit, OnDestroy {
     Utils.writels(THEMELS, themeLS, true);
   }
 
+  notyfyMe(){}
+
 }

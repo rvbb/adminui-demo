@@ -9,12 +9,8 @@
         "type": "ປະເພດ",
         "gender": "ເພດ",
         "bod": "ວັນເດືອນປີເກີດ",
-        "password":"Passowrd",
-        "register":"Register"
-    },
-    "caption": {
-        "lang": "ພາສາ",
-        "theme": "ຫົວຂໍ້"
+        "password": "Passowrd",
+        "register": "Register"
     },
     "menu": {
         "dashboard": "ສະຖິຕິ",
@@ -38,28 +34,34 @@
             "emailaddress": "Email address",
             "login": "Log in",
             "rememberme": "Remember me",
-            "emailrequired":"Email is required!",
-            "passwordrequired":"Password is required!",
-            "invalidemail":" Email should be the real one!",
-            "forgotpassword":"Forgot Password",
-            "fail":"Login fail!",
-            "wrongaccount":"Wrong account, please check and try again",
-            "notactive":"Your account is not actived",
-            "locked":"Your account was locked. Check with your administrator."
+            "emailrequired": "Email is required!",
+            "passwordrequired": "Password is required!",
+            "invalidemail": " Email should be the real one!",
+            "forgotpassword": "Forgot Password",
+            "fail": "Login fail!",
+            "wrongaccount": "Wrong account, please check and try again",
+            "notactive": "Your account is not actived",
+            "locked": "Your account was locked. Check with your administrator."
         },
-        "reset":{
-            "fillemail":"Enter your email address:",
-            "backlogin":"Back to Log In",
-            "description":"Enter your email address and we’ll send a link to reset your password",
-            "request":"Request Password"
+        "reset": {
+            "fillemail": "Enter your email address:",
+            "backlogin": "Back to Log In",
+            "description": "Enter your email address and we’ll send a link to reset your password",
+            "request": "Request Password"
         },
-        "logout":"Logging out ..., please wait!"
-    }
-    ,
-
+        "logout": "Logging out ..., please wait!"
+    },
     "notfound": {
         "title": "404 Page Not Found",
-        "detail":"The page you were looking for does not exist",
+        "detail": "The page you were looking for does not exist",
         "button": "Go Dashboard"
+    },
+    "global": {
+        "activity": "Activity",
+        "logout": "Logout",
+        "profile": "Profile",
+        "lang": "ພາສາ",
+        "theme": "ຫົວຂໍ້",
+        "notifyme": "Notify me"
     }
 }
